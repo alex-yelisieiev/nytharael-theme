@@ -389,21 +389,11 @@ samp {
   background: var(--tab-background-active);
 }
 
-.workspace-tab-header.is-active::after {
-  content: "";
-  position: absolute;
-  inset: 0.5px 12% auto;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--nyth-brass-bright), transparent);
-  box-shadow: 0 1px 7px color-mix(in oklch, var(--nyth-brass-bright) 34%, transparent);
-}
-
 .workspace-tab-header:not(.is-active) {
   color: var(--text-muted);
 }
 
-.workspace-tab-header.is-active::before,
-.workspace-tab-header.is-active::after {
+.workspace-tab-header.is-active::before {
   border-radius: 0;
 }
 
